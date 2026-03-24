@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALANCEO CDP - Optimización de Células de Producción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏭 BALANCEO CDP</h1>
+            <p>Optimización Estratégica de Células de Producción Textil</p>
+            <p class="subtitle">Theory of Constraints (TOC) + Lean Manufacturing</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="cargar">📥 Cargar Datos</button>
+            <button class="tab-btn" data-tab="diagnostico">📊 Diagnóstico AS-IS</button>
+            <button class="tab-btn" data-tab="movimientos">🔄 Análisis de Movimientos</button>
+            <button class="tab-btn" data-tab="optimizado">✅ Configuración TO-BE</button>
+            <button class="tab-btn" data-tab="kpi">📈 KPIs de Impacto</button>
+        </nav>
+
+        <!-- TAB 1: CARGAR DATOS -->
+        <div id="cargar" class="tab-content active">
+            <section class="card">
+                <h2>Cargar Archivo CSV</h2>
+                <div class="upload-section">
+                    <input type="file" id="csvFile" accept=".csv" />
+                    <button id="btnCargar" class="btn btn-primary">Cargar CSV</button>
+                </div>
+                <p id="statusMessage" class="status"></p>
+
+                <div id="datosPreview" style="display:none;">
+                    <h3>Vista Previa de Datos</h3>
+                    <div id="tablePreview" style="overflow-x: auto;"></div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 2: DIAGNÓSTICO AS-IS -->
+        <div id="diagnostico" class="tab-content">
+            <section class="card">
+                <h2>📊 Diagnóstico de Estado Actual (AS-IS)</h2>
+                <div id="diagnosticoContent">
+                    <p>Carga un CSV primero.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 3: ANÁLISIS DE MOVIMIENTOS -->
+        <div id="movimientos" class="tab-content">
+            <section class="card">
+                <h2>🔄 Análisis de Movimientos con Perturbación Mínima</h2>
+                <div id="movimientosContent">
+                    <p>Carga un CSV primero.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 4: CONFIGURACIÓN TO-BE -->
+        <div id="optimizado" class="tab-content">
+            <section class="card">
+                <h2>✅ Configuración Optimizada (TO-BE)</h2>
+                <div id="optimizadoContent">
+                    <p>Carga un CSV primero.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 5: KPIs -->
+        <div id="kpi" class="tab-content">
+            <section class="card">
+                <h2>📈 Impacto Cuantificado (KPIs)</h2>
+                <div id="kpiContent">
+                    <p>Carga un CSV primero.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="action-buttons">
+            <button id="btnBalancear" class="btn btn-success" style="display:none;">⚙️ Balancear Células</button>
+            <button id="btnDescargarExcel" class="btn btn-info" style="display:none;">📥 Descargar Excel</button>
+            <button id="btnLimpiar" class="btn btn-danger">🗑️ Limpiar Datos</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 BALANCEO CDP | Ingeniería Industrial + TOC/Lean Manufacturing</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
